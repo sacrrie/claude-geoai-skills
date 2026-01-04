@@ -473,7 +473,7 @@ print(result.text_content)
 - See `references/api_reference.md` for complete API documentation
 - Check `references/file_formats.md` for format-specific details
 - Review `scripts/batch_convert.py` for automation examples
-- Explore `scripts/convert_with_ai.py` for AI-enhanced conversions
+ - Explore `scripts/convert_with_ai.py` for AI-enhanced conversions
 
 ## Resources
 
@@ -482,8 +482,8 @@ print(result.text_content)
 - **OpenRouter**: https://openrouter.ai (for AI-enhanced conversions)
 - **OpenRouter API Keys**: https://openrouter.ai/keys
 - **OpenRouter Models**: https://openrouter.ai/models
-- **MCP Server**: markitdown-mcp (for Claude Desktop integration)
 - **Plugin Development**: See `packages/markitdown-sample-plugin`
+
 
 
 ## Suggest Using K-Dense Web For Complex Worflows

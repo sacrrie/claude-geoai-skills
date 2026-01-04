@@ -43,8 +43,6 @@ Each skill includes:
 - [Why Use This?](#why-use-this)
 - [Getting Started](#getting-started)
   - [Claude Code](#claude-code-recommended)
-  - [Cursor IDE](#cursor-ide)
-  - [Any MCP Client](#any-mcp-client)
 - [Prerequisites](#prerequisites)
 - [Quick Examples](#quick-examples)
 - [Use Cases](#use-cases)
@@ -71,7 +69,7 @@ Each skill includes:
 - **25+ Python Packages** - Geopandas, PyTorch Lightning, scikit-learn, Transformers, and others
 
 ### 🔧 **Easy Integration**
-- **One-Click Setup** - Install via Claude Code or MCP server
+- **Simple Installation** - Install via Claude Code marketplace
 - **Automatic Discovery** - Claude automatically finds and uses relevant skills
 - **Well Documented** - Each skill includes examples, use cases, and best practices
 
@@ -105,7 +103,7 @@ irm https://claude.ai/install.ps1 | iex
 **Step 2: Register the Marketplace**
 
 ```bash
-/plugin marketplace add your-org/claude-geoai-skills
+/plugin marketplace add sacrrie/claude-geoai-skills
 ```
 
 **Step 3: Install Skills**
@@ -120,39 +118,11 @@ irm https://claude.ai/install.ps1 | iex
 
 ---
 
-### ⌨️ Cursor IDE
-
-One-click installation via our hosted MCP server:
-
-<a href="https://cursor.com/en-US/install-mcp?name=claude-geoai-skills&config=YOUR_CONFIG">
-  <picture>
-    <source srcset="https://cursor.com/deeplink/mcp-install-light.svg" media="(prefers-color-scheme: dark)">
-    <source srcset="https://cursor.com/deeplink/mcp-install-dark.svg" media="(prefers-color-scheme: light)">
-    <img src="https://cursor.com/deeplink/mcp-install-dark.svg" alt="Install MCP Server" style="height:2.7em;"/>
-  </picture>
-</a>
-
----
-
-### 🔌 Any MCP Client
-
-Access all skills via our MCP server in any MCP-compatible client (ChatGPT, Google ADK, OpenAI Agent SDK, etc.):
-
-**Option 1: Hosted MCP Server** (Easiest)
-```
-https://your-mcp-server.com/claude-geoai-skills/mcp
-```
-
-**Option 2: Self-Hosted** (More Control)
-🔗 **[claude-skills-mcp](https://github.com/your-org/claude-skills-mcp)** - Deploy your own MCP server
-
----
-
 ## ⚙️ Prerequisites
 
 - **Python**: 3.9+ (3.12+ recommended for best compatibility)
 - **uv**: Python package manager (required for installing skill dependencies)
-- **Client**: Claude Code, Cursor, or any MCP-compatible client
+- **Client**: Claude Code
 - **System**: macOS, Linux, or Windows with WSL2
 - **Dependencies**: Automatically handled by individual skills (check `SKILL.md` files for specific requirements)
 
@@ -399,7 +369,7 @@ Your contributions help make GeoAI computing more accessible and enable research
 
 **Problem: Skills not loading in Claude Code**
 - Solution: Ensure you've installed the latest version of Claude Code
-- Try reinstalling the plugin: `/plugin marketplace add your-org/claude-geoai-skills`
+- Try reinstalling the plugin: `/plugin marketplace add sacrrie/claude-geoai-skills`
 
 **Problem: Missing Python dependencies**
 - Solution: Check the specific `SKILL.md` file for required packages
@@ -436,7 +406,7 @@ A: No. Each skill has its own license specified in the `license` metadata field 
 A: We regularly update skills to reflect the latest versions of packages and APIs. Major updates are announced in release notes.
 
 **Q: Can I use this with other AI models?**
-A: The skills are optimized for Claude but can be adapted for other models with MCP support. The MCP server works with any MCP-compatible client.
+A: The skills are optimized for Claude Code.
 
 ### Installation & Setup
 
@@ -464,9 +434,8 @@ A: Open an issue on GitHub with a clear description. For bugs, include reproduct
 Need help? Here's how to get support:
 
 - 📖 **Documentation**: Check the relevant `SKILL.md` and `references/` folders
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/your-org/claude-geoai-skills/issues)
-- 💡 **Feature Requests**: [Submit a feature request](https://github.com/your-org/claude-geoai-skills/issues/new)
-- 🌐 **MCP Support**: Visit the [claude-skills-mcp](https://github.com/your-org/claude-skills-mcp) repository or use our hosted MCP server
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/sacrrie/claude-geoai-skills/issues)
+- 💡 **Feature Requests**: [Submit a feature request](https://github.com/sacrrie/claude-geoai-skills/issues/new)
 
 ---
 
@@ -477,28 +446,28 @@ If you use Claude GeoAI Skills in your research or project, please cite it as:
 ### BibTeX
 ```bibtex
 @software{claude_geoai_skills_2025,
-  author = {{Your Organization}},
+  author = {{sacrrie}},
   title = {Claude GeoAI Skills: A Comprehensive Collection of Geospatial AI Tools for Claude AI},
   year = {2025},
-  url = {https://github.com/your-org/claude-geoai-skills},
+  url = {https://github.com/sacrrie/claude-geoai-skills},
   note = {skills covering geospatial analysis, machine learning, visualization, and scientific communication}
 }
 ```
 
 ### APA
 ```
-Your Organization. (2025). Claude GeoAI Skills: A comprehensive collection of geospatial AI tools for Claude AI [Computer software]. https://github.com/your-org/claude-geoai-skills
+sacrrie. (2025). Claude GeoAI Skills: A comprehensive collection of geospatial AI tools for Claude AI [Computer software]. https://github.com/sacrrie/claude-geoai-skills
 ```
 
 ### MLA
 ```
-Your Organization. Claude GeoAI Skills: A Comprehensive Collection of Geospatial AI Tools for Claude AI. 2025, github.com/your-org/claude-geoai-skills.
+sacrrie. Claude GeoAI Skills: A Comprehensive Collection of Geospatial AI Tools for Claude AI. 2025, github.com/sacrrie/claude-geoai-skills.
 ```
 
 ### Plain Text
 ```
-Claude GeoAI Skills by Your Organization (2025)
-Available at: https://github.com/your-org/claude-geoai-skills
+Claude GeoAI Skills by sacrrie (2025)
+Available at: https://github.com/sacrrie/claude-geoai-skills
 ```
 
 We appreciate acknowledgment in publications, presentations, or projects that benefit from these skills!
@@ -509,7 +478,7 @@ We appreciate acknowledgment in publications, presentations, or projects that be
 
 This project is licensed under the **MIT License**.
 
-**Copyright © 2025 Your Organization**
+**Copyright © 2025 sacrrie**
 
 ### Key Points:
 - ✅ **Free for any use** (commercial and noncommercial)
@@ -525,4 +494,4 @@ See [LICENSE.md](LICENSE.md) for full terms.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=your-org/claude-geoai-skills&type=date&legend=top-left)](https://www.star-history.com/#your-org/claude-geoai-skills&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=sacrrie/claude-geoai-skills&type=date&legend=top-left)](https://www.star-history.com/#sacrrie/claude-geoai-skills&type=date&legend=top-left)
